@@ -10,6 +10,8 @@ jobs:
   update-readme:
     name: Update this repo's README with WakaTime stats
     runs-on: ubuntu-latest
+    permissions:
+      contents: write   # 👈 Necesario para que pueda actualizar el README
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -18,3 +20,4 @@ jobs:
         uses: athul/waka-readme@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 👈 Usa el token de GitHub para commit
