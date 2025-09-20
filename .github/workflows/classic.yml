@@ -1,0 +1,21 @@
+name: 📗 Classic Template
+
+on:
+  # Corre todos los días a medianoche
+  schedule:
+    - cron: "0 0 * * *"
+  # Permite ejecutarlo manualmente
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📗 Generate classic template
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.classic.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          # Puedes personalizar qué secciones mostrar
+          base: header, repositories
+          plugin_lines: yes
