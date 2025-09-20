@@ -18,6 +18,6 @@ jobs:
           filename: metrics.plugin.anilist.svg
           base: ""
           plugin_anilist: yes
-          plugin_anilist_user: "tu_usuario_anilist"
+          plugin_anilist_user: "0xjose"
           plugin_anilist_medias: anime
           plugin_anilist_sections: favorites, watching
