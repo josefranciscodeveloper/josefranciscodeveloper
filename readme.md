@@ -1,9 +1,17 @@
+### ⁍ Jose
+
+
 > Bienvenido 
 >  
 > 
 >  !
 
-```javascript
+```
+File  Action  Edit  View  Help
+
+┌──(jose㉿GitHub)-[~]
+└─$ cat about-me
+
 const anmol = {
     pronouns: "He" | "Him",
     code: ["TypeScript", "Javascript", "Python", "Dart"],
@@ -62,3 +70,20 @@ No activity tracked
 
 [![committers.top badge](https://user-badge.committers.top/peru/josefranciscodeveloper.svg)](https://user-badge.committers.top/peru/josefranciscodeveloper)
 
+---
+
+### ⁍ 𝐇𝐨𝐰 𝐟𝐚𝐬𝐭 𝐜𝐚𝐧 𝐈 𝐭𝐲𝐩𝐞?:
+
+![image](https://raw.githubusercontent.com/josefranciscodeveloper/josefranciscodeveloper/refs/heads/main/monkeytype.png)
+
+
+- My MonkeyType Profile:
+```
+https://monkeytype.com/profile/0xasdfasdf
+```
+
+---
+
+
+
+<p align="center"> <img src="https://komarev.com/ghpvc/?username=josefranciscodeveloper&label=Profile%20views&color=0e75b6&style=flat" alt="josefranciscodeveloper" /> </p>
