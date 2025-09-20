@@ -1,0 +1,45 @@
+name: Metrics AniList
+
+on:
+  schedule:
+    - cron: "0 0 * * 0" # Corre cada domingo a medianoche
+  workflow_dispatch:     # Permite ejecutarlo manualmente
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate AniList favorites + watching
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.anilist.svg
+          token: NOT_NEEDED
+          base: ""
+          plugin_anilist: yes
+          plugin_anilist_user: "0xjose"    
+          plugin_anilist_medias: anime
+          plugin_anilist_sections: favorites, watching
+          plugin_anilist_limit: 3
+
+      - name: Generate AniList manga + reading
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.anilist.manga.svg
+          token: NOT_NEEDED
+          base: ""
+          plugin_anilist: yes
+          plugin_anilist_user: "0xjose"
+          plugin_anilist_medias: manga
+          plugin_anilist_sections: favorites, reading
+          plugin_anilist_limit: 3
+
+      - name: Generate AniList characters
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.anilist.characters.svg
+          token: NOT_NEEDED
+          base: ""
+          plugin_anilist: yes
+          plugin_anilist_user: "0xjose"
+          plugin_anilist_sections: characters
+          plugin_anilist_limit_characters: 20
